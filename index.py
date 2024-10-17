@@ -2,16 +2,20 @@ import requests
 from bs4 import BeautifulSoup
 
 
-# Pulling inital HTML from Hacker News
-res = requests.get('https://news.ycombinator.com/')
-bs4 = BeautifulSoup(res.text, 'html.parser')
+res = requests.get('https://news.ycombinator.com/', timeout=10)
+soup = BeautifulSoup(res.text, 'html.parser')
 
-# Checking bs4
-print('Website in HTML format')
-print(soup)
+links = soup.select('.titleline a')  # Get the title and link of the story
 
-print('Specific data inside body html tags')
-print(soup.body)
 
-# Print div tags
-print(soup.find_all('div'))
+def topstories_hn(links):
+    hn = []
+    for idx, item in enumerate(links):
+        story = links[idx].getText()
+        href = links[idx].get('href', None)
+        # append into dictionary
+        hn.append({'story': story, 'links': href})
+    return hn
+
+
+print(topstories_hn(links))
