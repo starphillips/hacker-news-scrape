@@ -16,10 +16,11 @@ The script fetches the front page and the second page of Hacker News, parses the
 
 <h2> Usage </h2>
 1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/starphillips/hacker-news-scrape.git
-   cd hacker-news-scrape
-   ```
+  
+```console
+git clone https://github.com/starphillips/hacker-news-scrape.git
+cd hacker-news-scrape
+```
 
 
 
