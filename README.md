@@ -22,6 +22,18 @@ git clone https://github.com/starphillips/hacker-news-scrape.git
 cd hacker-news-scrape
 ```
 
+2. **Install Dependencies:**
+
+```console
+pip install -r requirements.txt
+```
+
+3. **Run the Script:**
+
+```console
+python index.py
+```
+
 
 
 
