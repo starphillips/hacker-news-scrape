@@ -11,7 +11,9 @@ The script fetches the front page and the second page of Hacker News, parses the
 - Sorts stories by the number of votes in descending order.
 
 <h2> Requirements </h2>
+
 - Python 3.6+
+
 - Required packages listed in `requirements.txt` (install using `pip install -r requirements.txt`)
 
 <h2> Usage </h2>
