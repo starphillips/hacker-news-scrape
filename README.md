@@ -19,6 +19,7 @@ The script fetches the front page and the second page of Hacker News, parses the
    ```bash
    git clone https://github.com/starphillips/hacker-news-scrape.git
    cd hacker-news-scrape
+   ```
 
 
 
